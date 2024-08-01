@@ -9,10 +9,10 @@ import {
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { FaGitAlt } from "react-icons/fa6";
 
 import image1 from "../assets/project1.jpeg";
 import image2 from "../assets/project2.jpeg";
@@ -74,7 +74,7 @@ export const PROJECTS = [
     title: "Personal Portfolio",
     subtitle: "My Personal Portfolio made with React.js, TailwindCss, Framer Motion and GSAP.",
     image: image4,
-    link: "https://restauraa.netlify.app"
+    link: "https://fawadmunawar.netlify.app"
   },
 ]
 
@@ -90,13 +90,13 @@ export const SKILLS = [
     experience: "1+ year",
   },
   {
-    icon: <SiMongodb className="text-4xl lg:text-6xl text-green-600" />,
-    name: "MongoDB",
+    icon: <TbBrandFramerMotion className="text-4xl lg:text-6xl text-rose-300" />,
+    name: "Framer Motion",
     experience: "1.5+ years",
   },
   {
-    icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
-    name: "Redis",
+    icon: <RiTailwindCssFill className="text-4xl lg:text-6xl text-sky-600" />,
+    name: "Tailwind CSS",
     experience: "1+ year",
   },
   {
@@ -105,9 +105,9 @@ export const SKILLS = [
     experience: "2+ years",
   },
   {
-    icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
-    name: "PostgreSQL",
-    experience: "1+ year",
+    icon: <FaGitAlt  className="text-4xl lg:text-6xl text-rose-700" />,
+    name: "Git",
+    experience: "2+ year",
   },
 ];
 
@@ -115,7 +115,7 @@ export const ACHIEVEMENT = {
   title: "International Hackaton - Tokyo",
   award: "Gold Medalist - 2024",
   description:
-    "Winner of the 2024 Algo coding representing the University of Oxford. This achievement showcases exceptional problem-solving skills and dedication. The event provided a platform to innovate and collaborate with the brightest minds, resulting in a prestigious accolade.",
+    "My goal is to continually enhance my front-end development skills by mastering modern JavaScript frameworks, improving CSS techniques, and focusing on user experience and accessibility. I aim to stay updated with web standards and performance optimization, contribute to open-source projects, and refine my portfolio to showcase my expertise.",
 };
 
 export const TESTIMONIALS = [

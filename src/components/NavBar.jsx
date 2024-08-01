@@ -8,6 +8,10 @@ import { FaBars } from "react-icons/fa6";
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleLogo = () => {
+    window.location.reload()
+  }
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -33,7 +37,7 @@ const NavBar = () => {
         <div className="mx-auto hidden max-w-2xl items-center justify-around rounded-lg bg-black/20 py-3 backdrop-blur-lg lg:flex">
           <div className="flex justify-between gap-6">
             <a href="#">
-              <img src={logo} width={90} alt="logo" />
+              <img src={logo} width={90} alt="logo" onClick={handleLogo}/>
             </a>
           </div>
           <div>
