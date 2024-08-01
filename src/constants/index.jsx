@@ -51,51 +51,32 @@ export const ABOUT = {
 
 export const PROJECTS = [
   {
-    title: "E-commerce Platform",
+    title: "Juice Animations",
     subtitle:
-      "A full-stack e-commerce platform built with React, Node.js, and MongoDB.",
+      "Juice Animations made with React.js, TailwindCss and Framer Motion",
     image: image1,
+    link: "https://juicesanimation.netlify.app"
   },
   {
-    title: "Social Media App",
+    title: "Landing Page App",
     subtitle:
-      "A social media application developed using Next.js and Firebase.",
+      "A landing page for a tech company, Fully responsive made with React.js, Tailwindcss and Framer Motion",
     image: image2,
+    link: "https://virtualrlandingpage.netlify.app"
   },
   {
-    title: "Project Management Tool",
-    subtitle: "A project management tool built with Django and PostgreSQL.",
+    title: "Restaurant Site",
+    subtitle: "A Restaurant Landing Page made with React.js, Tailwindcss and Framer Motion",
     image: image3,
+    link: "https://restauraa.netlify.app"
   },
   {
     title: "Personal Portfolio",
-    subtitle:
-      "A personal portfolio website designed with HTML, CSS, and JavaScript.",
+    subtitle: "My Personal Portfolio made with React.js, TailwindCss, Framer Motion and GSAP.",
     image: image4,
+    link: "https://restauraa.netlify.app"
   },
-  {
-    title: "Weather Dashboard",
-    subtitle:
-      "A weather dashboard application built with Vue.js and Express.js.",
-    image: image5,
-  },
-  {
-    title: "Blog Platform",
-    subtitle:
-      "A blogging platform developed with Ruby on Rails and PostgreSQL.",
-    image: image6,
-  },
-  {
-    title: "Fitness Tracker",
-    subtitle: "A fitness tracking app created using Flutter and Firebase.",
-    image: image7,
-  },
-  {
-    title: "Recipe Finder",
-    subtitle: "A recipe finder application developed with Angular and Node.js.",
-    image: image8,
-  },
-];
+]
 
 export const SKILLS = [
   {
