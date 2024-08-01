@@ -32,8 +32,8 @@ export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Award", href: "#award" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "Goal", href: "#goal" },
+  // { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -115,7 +115,7 @@ export const ACHIEVEMENT = {
   title: "International Hackaton - Tokyo",
   award: "Gold Medalist - 2024",
   description:
-    "My goal is to continually enhance my front-end development skills by mastering modern JavaScript frameworks, improving CSS techniques, and focusing on user experience and accessibility. I aim to stay updated with web standards and performance optimization, contribute to open-source projects, and refine my portfolio to showcase my expertise.",
+    "y goal is to continually enhance my front-end development skills by mastering modern JavaScript frameworks, improving CSS techniques, and focusing on user experience and accessibility. I aim to stay updated with web standards and performance optimization, contribute to open-source projects, and refine my portfolio to showcase my expertise.",
 };
 
 export const TESTIMONIALS = [
