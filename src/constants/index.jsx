@@ -72,7 +72,7 @@ export const PROJECTS = [
   },
   {
     title: "Personal Portfolio",
-    subtitle: "My Personal Portfolio made with React.js, TailwindCss, Framer Motion and GSAP.",
+    subtitle: "My Personal Portfolio made with React.js, TailwindCss, Framer Motion, GSAP, Emailjs and React Hot Toast. ",
     image: image4,
     link: "https://fawadmunawar.netlify.app"
   },
