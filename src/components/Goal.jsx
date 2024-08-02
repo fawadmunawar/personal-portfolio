@@ -13,7 +13,7 @@ const Goal = () => {
           </video>
         </div>
         <div className="w-full p-4 text-center sm:w-1/2">
-            <p className="m-4 p-2 italic"><span className="text-7xl font-custom text-yellow-200">M</span>{ACHIEVEMENT.description}</p>
+            <p className="m-4 p-2 italic"><span className="text-7xl font-custom text-yellow-400">M</span>{ACHIEVEMENT.description}</p>
         </div>
       </div>
     </div>

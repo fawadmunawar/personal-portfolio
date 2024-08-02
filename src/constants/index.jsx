@@ -60,13 +60,13 @@ export const PROJECTS = [
   {
     title: "Landing Page App",
     subtitle:
-      "A landing page for a tech company, Fully responsive made with React.js, Tailwindcss and Framer Motion",
+      "A landing page for a tech company. Fully responsive made with React.js and Tailwindcss",
     image: image2,
     link: "https://virtualrlandingpage.netlify.app"
   },
   {
     title: "Restaurant Site",
-    subtitle: "A Restaurant Landing Page made with React.js, Tailwindcss and Framer Motion",
+    subtitle: "Fully Responsive Restaurant Landing Page made with React.js, Tailwindcss and Framer Motion",
     image: image3,
     link: "https://restauraa.netlify.app"
   },
@@ -81,7 +81,7 @@ export const PROJECTS = [
 export const SKILLS = [
   {
     icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
-    name: "React",
+    name: "React.js",
     experience: "2+ years",
   },
   {
@@ -151,27 +151,15 @@ export const TESTIMONIALS = [
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
-    icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
-    icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://x.com/",
+    href: "https://www.instagram.com/notfawadd/",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
-    icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://github.com/",
+    href: "https://github.com/fawadmunawar",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/fawad-munawar-327885288/",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
 ];

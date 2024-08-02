@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Goal from './components/Goal'
 import ContactForm from './components/ContactForm'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Skills />
         <Goal />
         <ContactForm />
+        <Footer />
       </main>
     </>
   )
