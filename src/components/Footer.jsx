@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import { SOCIAL_MEDIA_LINKS } from '../constants'
+import { motion } from "framer-motion"
 
 const Footer = () => {
   return (
@@ -18,7 +19,8 @@ const Footer = () => {
                 </a>
             ))}
         </div>
-        <p className='mt-8 text-center text-sm tracking-wide px-4 text-gray-400'>
+        <p
+        className='mt-8 text-center text-sm tracking-wide px-4 text-gray-400'>
             This site is made by me and a little help of chatGPT hehe :D
         </p>
         <p className='mt-8 text-center text-sm tracking-wide text-gray-400'>

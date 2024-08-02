@@ -1,6 +1,7 @@
 import React from "react";
 import video from "../assets/video.mp4";
 import { ACHIEVEMENT } from "../constants";
+import {motion} from "framer-motion"
 
 const Goal = () => {
   return (
@@ -13,7 +14,24 @@ const Goal = () => {
           </video>
         </div>
         <div className="w-full p-4 text-center sm:w-1/2">
-            <p className="m-4 p-2 italic"><span className="text-7xl font-custom text-yellow-400">M</span>{ACHIEVEMENT.description}</p>
+            <motion.p 
+              initial={{
+                x: 100
+              }}
+              whileInView={{
+                x: 0
+              }}
+              transition={{
+                type: "spring",
+                delay: 0.1,
+                stiffness: 200
+              }}
+              viewport={{
+                once: true,
+                amount: 0.5
+              }}
+
+            className="m-4 p-2 italic"><span className="text-7xl font-custom text-yellow-400">M</span>{ACHIEVEMENT.description}</motion.p>
         </div>
       </div>
     </div>

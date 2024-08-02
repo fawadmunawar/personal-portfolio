@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Toaster } from "react-hot-toast";
+import { motion } from "framer-motion"
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -71,7 +72,17 @@ const ContactForm = () => {
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
         Let's Connect
       </h2>
-      <form action="" onSubmit={handleSubmit}>
+      <motion.form
+        initial={{
+          opacity: 0.1
+        }}
+        whileInView={{
+          opacity: 1
+        }}
+        transition={{
+          delay: 0.7
+        }}
+       action="" onSubmit={handleSubmit}>
         <div className="mb-4">
           <input
             type="text"
@@ -122,7 +133,7 @@ const ContactForm = () => {
         >
             {isSending ? "Sending..." : "Send"}
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 };
