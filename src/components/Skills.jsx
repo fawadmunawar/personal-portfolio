@@ -21,7 +21,6 @@ const Skills = () => {
                 opacity: 0.1,
                 stagger: 2,
                 ease: "back",
-                delay: 2
 
         })
       }, comp)
