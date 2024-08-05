@@ -12,7 +12,7 @@ const Skills = () => {
         gsap.from("#scroll", {
             scrollTrigger: {
                 trigger: "#scroll",
-                start: "top 80%",
+                start: "top 50%",
                 end: "top 10%",
                 scrub: 1,
                 markers: false
