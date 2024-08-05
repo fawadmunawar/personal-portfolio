@@ -16,8 +16,8 @@ const About = () => {
       gsap.from(splitText.chars, {
         scrollTrigger: {
           trigger: "#about-heading",
-          start: "top 50%",
-          end: "top 1%",
+          start: "top 70%",
+          end: "bottom 80%",
           scrub: 1,
           markers: false, // Enable markers for debugging
         },
