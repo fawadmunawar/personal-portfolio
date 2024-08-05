@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-    const tl = gsap.timeline()
+      const tl = gsap.timeline();
       tl.to(".intro-div", {
         opacity: 1,
         delay: 1.5,
@@ -31,7 +31,7 @@ const App = () => {
         onComplete: () => {
           setShowIntro(false);
           setStartMainAnimation(true);
-        }
+        },
       });
     }, introRef);
 
@@ -57,24 +57,22 @@ const App = () => {
       {showIntro && (
         <div
           ref={introRef}
-          className="intro w-screen h-screen fixed bg-black flex justify-center items-center flex-col text-white tracking-tighter font-mono gap-2 text-xl sm:gap-4 md:gap-8 lg:gap-16"
+          className="intro w-screen h-screen fixed bg-black flex justify-center items-center text-white tracking-tighter font-mono gap-2 text-xl sm:gap-4 md:gap-8 lg:gap-16"
         >
-          <div className="flex justify-center items-center tracking-tighter font-mono gap-2 text-3xl sm:gap-4 md:gap-8 lg:gap-16">
-            <div className="intro-div opacity-0">1</div>
-            <div className="intro-div opacity-0">2</div>
-            <div className="intro-div opacity-0">3</div>
-            <div className="intro-div opacity-0">4</div>
-            <div className="intro-div opacity-0">5</div>
-            <div className="intro-div opacity-0">6</div>
-            <div className="intro-div opacity-0">7</div>
-            <div className="intro-div opacity-0">8</div>
-            <div className="intro-div opacity-0">9</div>
-            <div className="intro-div opacity-0">22</div>
-            <div className="intro-div opacity-0">50</div>
-            <div className="intro-div opacity-0">64</div>
-            <div className="intro-div opacity-0">96</div>
-            <div className="intro-div opacity-0">100</div>
-          </div>
+          <div className="intro-div opacity-0">1</div>
+          <div className="intro-div opacity-0">2</div>
+          <div className="intro-div opacity-0">3</div>
+          <div className="intro-div opacity-0">4</div>
+          <div className="intro-div opacity-0">5</div>
+          <div className="intro-div opacity-0">6</div>
+          <div className="intro-div opacity-0">7</div>
+          <div className="intro-div opacity-0">8</div>
+          <div className="intro-div opacity-0">9</div>
+          <div className="intro-div opacity-0">22</div>
+          <div className="intro-div opacity-0">50</div>
+          <div className="intro-div opacity-0">64</div>
+          <div className="intro-div opacity-0">96</div>
+          <div className="intro-div opacity-0">100</div>
         </div>
       )}
       {!showIntro && (
