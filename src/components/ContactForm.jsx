@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Toaster } from "react-hot-toast";
+import { Toaster,toast } from "react-hot-toast";
 import { motion } from "framer-motion"
 
 const ContactForm = () => {
@@ -57,8 +57,8 @@ const ContactForm = () => {
           setFormData({ name: "", email: "", message: "" });
         })
         .catch((errors) => {
-          console.log("failed...", error);
-          toast.error("Failed to send message. Please tyr again later.");
+          console.log("failed...", errors);
+          toast.error("Failed to send message. Please try again later.");
         })
         .finally(() => {
           setIsSending(false);

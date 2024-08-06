@@ -8,8 +8,11 @@ import Goal from "./components/Goal";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import { gsap } from "gsap";
+import useLenisScroll from './constants/useLenisScroll';
 
 const App = () => {
+  useLenisScroll();
+
   const [showIntro, setShowIntro] = useState(true);
   const [startMainAnimation, setStartMainAnimation] = useState(false);
   const introRef = useRef(null);
