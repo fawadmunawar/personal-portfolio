@@ -28,8 +28,8 @@ const Goal = () => {
       tl.to(
         ".top",
         {
-          top: "-100%",
-          duration: 2,
+          top: "-200%",
+          duration: 1,
           ease: "power3.inOut",
         },
         "a"
@@ -37,8 +37,8 @@ const Goal = () => {
       tl.to(
         ".bottom",
         {
-          bottom: "-100%",
-          duration: 2,
+          bottom: "-200%",
+          duration: 1,
           ease: "power3.inOut",
         },
         "a"
@@ -46,9 +46,9 @@ const Goal = () => {
       tl.from(
         "#innerGoal",
         {
-          marginTop: "100rem",
+          marginTop: "50rem",
           opacity: 0,
-          duration: 2.5,
+          duration: 1.5,
           ease: "power4.inOut",
         },
         "a"
