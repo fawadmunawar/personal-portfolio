@@ -1,80 +1,41 @@
-import React from "react";
-import video from "../assets/video.mp4";
+import React, { useEffect, useRef } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
 import { ACHIEVEMENT } from "../constants";
-import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import video from '../assets/video.mp4'
 
 const Goal = () => {
-  const ref = useRef(null);
+  const targetref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetref,
+    offset: ["0% 25%", "end 100%"],
+  });
 
-  // useEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     let tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: "#main",
-  //         start: "50% 50%",
-  //         end: "200% 50%",
-  //         scrub: true,
-  //         pin: true,
-  //         markers: true,
-  //       },
-  //     });
-  //     tl.to(
-  //       ".top",
-  //       {
-  //         top: "-200%",
-  //         duration: 1,
-  //         ease: "power3.inOut",
-  //       },
-  //       "a"
-  //     );
-  //     tl.to(
-  //       ".bottom",
-  //       {
-  //         bottom: "-200%",
-  //         duration: 1,
-  //         ease: "power3.inOut",
-  //       },
-  //       "a"
-  //     );
-  //     tl.from(
-  //       "#innerGoal",
-  //       {
-  //         marginTop: "50rem",
-  //         opacity: 0,
-  //         duration: 1.5,
-  //         ease: "power4.inOut",
-  //       },
-  //       "a"
-  //     );
-  //   }, ref);
-
-  //   return () => ctx.revert();
-  // }, []);
+  const top = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  const bottom = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  const marginT = useTransform(scrollYProgress, [0, 1], ["800px", "0px"])
 
   return (
     <div
-      id="main"
-      ref={ref}
-      className="w-screen h-screen bg-white relative overflow-hidden"
+      ref={targetref}
+      id="goal"
+      className="w-screen h-screen bg-black relative overflow-hidden text-white"
     >
-      <div className="top absolute w-full h-1/2 bg-black top-[0%] overflow-hidden flex items-end justify-center">
-        <h1 id="heading1" className="text-[15vw] mb-[-11vw]">
+      <motion.div
+        style={{ top: top }}
+        id="top-container"
+        className="w-full h-1/2 bg-black absolute top-[0%] flex items-end justify-center overflow-hidden"
+      >
+        <h1
+          id="heading1"
+          className="text-[16vw] absolute bottom-[0%] left-1/2 transform -translate-x-1/2 translate-y-1/2"
+        >
           GOAL
         </h1>
-      </div>
-      <div
-        className="center w-screen bg-white/20 flex flex-col text-black"
-        id="goal"
-      >
-        <div id="innerGoal">
-          <h2 className="mb-12 mt-20 text-center text-4xl font-semibold">
-            Goal
-          </h2>
+      </motion.div>
+      <div className="w-screen h-screen bg-white/10 flex flex-col justify-center items-center">
+        <motion.div id="innerGoal"
+          style={{marginTop: marginT}}
+        >
           <div className="mx-auto max-w-6xl flex-wrap flex">
             <div className="w-full p-2 sm:w-1/2">
               <video
@@ -94,13 +55,20 @@ const Goal = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="bottom absolute w-full h-1/2 bg-black bottom-[0%] overflow-hidden flex items-start justify-center">
-        <h1 id="heading2" className="text-[15vw] mt-[-11.5vw]">
+      <motion.div
+        style={{ bottom: bottom }}
+        id="bottom-container"
+        className="w-full h-1/2 bg-black absolute bottom-0 flex items-start justify-center overflow-hidden"
+      >
+        <h1
+          id="heading2"
+          className="text-[16vw] absolute top-[0%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        >
           GOAL
         </h1>
-      </div>
+      </motion.div>
     </div>
   );
 };
