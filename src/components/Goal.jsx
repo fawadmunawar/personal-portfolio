@@ -13,6 +13,8 @@ const Goal = () => {
   const top = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const bottom = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const marginT = useTransform(scrollYProgress, [0, 1], ["800px", "0px"])
+  const headingTop = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"])
+  const headingBottom = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"])
 
   return (
     <div
@@ -21,6 +23,7 @@ const Goal = () => {
       className="w-screen h-screen bg-black relative overflow-hidden text-white"
     >
       <motion.div
+      transition={{type: "inertia"}}
         style={{ top: top }}
         id="top-container"
         className="w-full h-1/2 bg-black absolute top-[0%] flex items-end justify-center overflow-hidden"
@@ -59,6 +62,7 @@ const Goal = () => {
       </div>
       <motion.div
         style={{ bottom: bottom }}
+        transition={{type: "inertia"}}
         id="bottom-container"
         className="w-full h-1/2 bg-black absolute bottom-0 flex items-start justify-center overflow-hidden"
       >
