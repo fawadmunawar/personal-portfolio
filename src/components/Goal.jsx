@@ -13,8 +13,8 @@ const Goal = () => {
   const top = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const bottom = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const marginT = useTransform(scrollYProgress, [0, 1], ["800px", "0px"])
-  const headingTop = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"])
-  const headingBottom = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"])
+  const headingTop = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"])
+  const headingBottom = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"])
 
   return (
     <div
