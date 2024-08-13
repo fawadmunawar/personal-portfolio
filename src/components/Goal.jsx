@@ -7,14 +7,14 @@ const Goal = () => {
   const targetref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetref,
-    offset: ["0% 25%", "end 100%"],
+    offset: ["0% 30%", "end 90%"],
   });
 
   const top = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const bottom = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const marginT = useTransform(scrollYProgress, [0, 1], ["800px", "0px"])
-  const headingTop = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"])
-  const headingBottom = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"])
+  const headingTop = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"])
+  const headingBottom = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"])
 
   return (
     <div
@@ -28,12 +28,13 @@ const Goal = () => {
         id="top-container"
         className="w-full h-1/2 bg-black absolute top-[0%] flex items-end justify-center overflow-hidden"
       >
-        <h1
+        <motion.h1
+          style={{bottom: headingTop}}
           id="heading1"
           className="text-[16vw] absolute bottom-[0%] left-1/2 transform -translate-x-1/2 translate-y-1/2"
         >
           GOAL
-        </h1>
+        </motion.h1>
       </motion.div>
       <div className="w-screen h-screen bg-white/10 flex flex-col justify-center items-center">
         <motion.div id="innerGoal"
@@ -66,12 +67,13 @@ const Goal = () => {
         id="bottom-container"
         className="w-full h-1/2 bg-black absolute bottom-0 flex items-start justify-center overflow-hidden"
       >
-        <h1
+        <motion.h1
+          style={{top: headingTop}}
           id="heading2"
           className="text-[16vw] absolute top-[0%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           GOAL
-        </h1>
+        </motion.h1>
       </motion.div>
     </div>
   );

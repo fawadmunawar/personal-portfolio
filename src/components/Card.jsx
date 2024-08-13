@@ -18,7 +18,7 @@ const Card = ({ image, title, subtitle, link }) => {
           <img src={image} className="w-full" alt={title} />
         <div className="flex flex-col justify-between p-4 text-white">
           <h2 className="mb-2 text-2xl font-bold">{title}</h2>
-          <p className="mb-4 text-sm font-light italic">{subtitle}</p>
+          <p className="mb-4 text-sm font-extralightt">{subtitle}</p>
         </div>
       </div>
     </motion.a>
