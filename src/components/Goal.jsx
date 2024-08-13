@@ -36,7 +36,7 @@ const Goal = () => {
           GOAL
         </motion.h1>
       </motion.div>
-      <div className="w-screen h-screen bg-white/10 flex flex-col justify-center items-center">
+      <div className="w-screen h-screen bg-white flex flex-col justify-center items-center">
         <motion.div id="innerGoal"
           style={{marginTop: marginT}}
         >
@@ -52,7 +52,7 @@ const Goal = () => {
                 <source src={video} type="video/mp4" />
               </video>
             </div>
-            <div className="w-full p-4 text-start sm:w-1/2">
+            <div className="w-full p-4 text-start sm:w-1/2 text-black">
               <p className="m-4 p-2">
                 <span className="text-7xl font-custom text-yellow-400">M</span>
                 {ACHIEVEMENT.description}
