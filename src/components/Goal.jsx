@@ -7,14 +7,13 @@ const Goal = () => {
   const targetref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetref,
-    offset: ["0% 30%", "end 90%"],
+    offset: ["0% 30%", "end 90%"]
   });
 
   const top = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const bottom = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const marginT = useTransform(scrollYProgress, [0, 1], ["0px", "0px"])
   const headingTop = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"])
-  const headingBottom = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"])
 
   return (
     <div
@@ -31,7 +30,7 @@ const Goal = () => {
         <motion.h1
           style={{bottom: headingTop}}
           id="heading1"
-          className="text-[16vw] absolute bottom-[0%] left-1/2 transform -translate-x-1/2 translate-y-1/2"
+          className="text-[8rem] md:text-[16vw] absolute bottom-[0%] left-1/2 transform -translate-x-1/2 translate-y-1/2"
         >
           GOAL
         </motion.h1>
@@ -70,7 +69,7 @@ const Goal = () => {
         <motion.h1
           style={{top: headingTop}}
           id="heading2"
-          className="text-[16vw] absolute top-[0%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          className="text-[8rem] md:text-[16vw] absolute top-[0%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           GOAL
         </motion.h1>
