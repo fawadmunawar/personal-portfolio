@@ -10,7 +10,7 @@ const About = () => {
   const comp = useRef(null);
 
   useEffect(() => {
-    const splitText = new SplitType("#about-heading", { types: "chars" });
+    const splitText = new SplitType("#about-heading", { types: "chars,words" });
 
     const ctx = gsap.context(() => {
       gsap.from(splitText.chars, {
@@ -22,7 +22,7 @@ const About = () => {
           markers: false, // Enable markers for debugging
         },
         opacity: 0.1,
-        stagger: 1.5,
+        stagger: 2,
         ease: "circ.out",
         duration: 2,
       });
