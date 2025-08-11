@@ -82,32 +82,32 @@ export const SKILLS = [
   {
     icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
     name: "React.js",
-    experience: "2+ years",
+    experience: "4+ years",
   },
   {
     icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-white" />,
     name: "Next.js",
-    experience: "1+ year",
+    experience: "2+ year",
   },
   {
     icon: <TbBrandFramerMotion className="text-4xl lg:text-6xl text-rose-300" />,
     name: "Framer Motion",
-    experience: "1.5+ years",
+    experience: "3+ years",
   },
   {
     icon: <RiTailwindCssFill className="text-4xl lg:text-6xl text-sky-600" />,
     name: "Tailwind CSS",
-    experience: "1+ year",
+    experience: "2+ year",
   },
   {
     icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-600" />,
     name: "Node.js",
-    experience: "2+ years",
+    experience: "3+ years",
   },
   {
     icon: <FaGitAlt  className="text-4xl lg:text-6xl text-rose-700" />,
     name: "Git",
-    experience: "2+ year",
+    experience: "4+ year",
   },
 ];
 
